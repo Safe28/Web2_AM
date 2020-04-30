@@ -354,16 +354,28 @@ textarea {
 /* =============
     Footer
 ============= */
-#footer {
+footer {
   display: grid;
-  grid-template-columns: 2% auto auto 2%;
-  grid-template-areas: ". insta-logo copyrights  ."; }
+  grid-template-columns: 50% auto 40% 10%;
+  grid-template-areas: ". i . d"; }
+  footer #insta img {
+    grid-area: i; }
+  footer #copyrights {
+    grid-area: d; }
+
+a {
+  background-color: black; }
 
 /* =============
     Section 1
 ============= */
-h1 {
-  padding-left: 3px; }
+#section-1 #headline-container {
+  display: grid;
+  grid-template-columns: 5% auto 50%;
+  grid-template-areas: ". h1 ."; }
+
+#section-1 #headline {
+  grid-area: h1; }
 
 #section-1 img {
   width: 100%; }
@@ -371,16 +383,16 @@ h1 {
 /* =============
     Section 2
 ============= */
-p {
-  padding-left: 5px;
-  padding-right: 5px; }
-
-h3 {
-  padding-left: 5px;
-  padding-right: 5px; }
-
-#japan img {
+#section-2 img {
   width: 100%; }
+
+#section-2 #section-2-conent {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas: ". h3 ." ". p ."; }
+  #section-2 #section-2-conent #article-1 {
+    grid-area: h3;
+    grid-area: p; }
 
 /* =============
     Section 3
@@ -388,22 +400,34 @@ h3 {
 #section-3 img {
   width: 100%; }
 
+#section-3 #section-3-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". t ."; }
+  #section-3 #section-3-container #section-3-content {
+    grid-area: t;
+    text-align: center; }
+
 /* =============
     Section 4
 ============= */
 #section-4 {
   display: grid;
-  grid-template-columns: 5px auto 5px;
-  grid-template-areas: ". section-4 ."; }
-  #section-4 ul li img {
-    width: 100%; }
-
-#section-4-content {
-  grid-area: section-4; }
+  grid-template-columns: 5% auto 5%;
+  grid-template-areas: ". g ."; }
+  #section-4 img {
+    width: 100%;
+    margin: 5px; }
+  #section-4 #section-4-content {
+    grid-area: g; }
 
 /* =============
     Section 5
 ============= */
-#house img {
+#section-5 img {
   margin: 2%;
   width: 96%; }
+
+#section-5 p {
+  text-align: center;
+  margin: 5%; }

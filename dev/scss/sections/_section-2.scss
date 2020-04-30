@@ -1,20 +1,23 @@
 /* =============
     Section 2
 ============= */
-p {
-
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-h3 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#japan{
-
+#section-2{
+    
     img{
         width: 100%;
+    }
+
+    #section-2-conent{
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-areas:
+        ". h3 ."
+        ". p .";
+
+
+        #article-1{
+            grid-area: h3;
+            grid-area: p;
+        }
     }
 }

@@ -1,23 +1,18 @@
 /* =============
     Section 4
 ============= */
-
 #section-4{
-    display: grid;
-    grid-template-columns: 5px auto 5px;
-    grid-template-areas: ". section-4 .";
 
-    ul{
-        li{
-            img{
-                width: 100%;
-            }
-        }
-    }
-    }
+  img{
+      width: 100%;   
+      margin: 5px;
+  }
+    display: grid;
+    
+    grid-template-columns: 5% auto 5%;
+    grid-template-areas: ". g .";
+
     #section-4-content{
-        
-       
-        grid-area: section-4;
-       
-    }
+     grid-area: g;
+    
+    }}

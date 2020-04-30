@@ -1,9 +1,29 @@
 /* =============
     Footer
 ============= */
-#footer{
+footer{
 
-    display: grid;
-    grid-template-columns: 2% auto auto 2%;
-    grid-template-areas: ". insta-logo copyrights  .";
-}
+    
+        display: grid;
+        grid-template-columns: 50% auto 40% 10%;
+        grid-template-areas: ". i . d";
+    
+        #insta{
+            
+            img{
+            grid-area: i;
+            
+            
+        }}
+    
+        #copyrights{
+            grid-area: d
+        }
+    }
+    
+    a{
+        background-color: black;
+    }
+
+
+
