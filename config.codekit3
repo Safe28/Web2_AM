@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "26667",
 "files": {
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/deploy\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -32,7 +38,7 @@
 		},
 	"\/deploy\/img\/section-1\/hero.png": {
 		"ft": 32768,
-		"iS": 1281909,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "\/build\/deploy\/img\/section-1\/hero.png",
 		"oF": 0,

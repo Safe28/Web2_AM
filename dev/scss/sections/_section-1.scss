@@ -2,17 +2,7 @@
     Section 1
 ============= */
 #section-1{
-
-#headline-container{
-    display: grid;
-    grid-template-columns:5% auto 50%;
-    grid-template-areas:
-    ". h1 .";
-}
-#headline{
-    grid-area: h1;
 }
 img{
         width: 100%;
     }
-}

@@ -13,6 +13,20 @@
     grid-template-areas: ". g .";
 
     #section-4-content{
-     grid-area: g;
-    
-    }}
+      grid-area: g;
+     }
+     #one{
+       grid-area: 1;
+     }
+    #two{
+      grid-area: 2;
+    }
+    #three{
+      grid-area: 3;
+    }
+  #section-4-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+}
