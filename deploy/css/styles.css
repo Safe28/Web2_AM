@@ -449,15 +449,9 @@ img {
     margin: 5px; }
   #section-4 #section-4-content {
     grid-area: g; }
-  #section-4 #one {
-    grid-area: 1; }
-  #section-4 #two {
-    grid-area: 2; }
-  #section-4 #three {
-    grid-area: 3; }
-  #section-4 #section-4-content {
-    display: grid;
-    grid-template-rows: 1fr 1fr; }
+  @media (min-width: 992px) {
+    #section-4 ul #one img {
+      width: 100%; } }
 
 /* =============
     Section 5

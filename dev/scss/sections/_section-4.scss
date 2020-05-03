@@ -15,18 +15,16 @@
     #section-4-content{
       grid-area: g;
      }
+
+
+
+
+     
+     @include lg{
+       ul{
      #one{
-       grid-area: 1;
-     }
-    #two{
-      grid-area: 2;
-    }
-    #three{
-      grid-area: 3;
-    }
-  #section-4-content{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
+     img{
+       width: 100%;
+     }}}}
 
 }
