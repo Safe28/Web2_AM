@@ -358,10 +358,12 @@ footer {
   display: grid;
   grid-template-columns: 50% auto 40% 10%;
   grid-template-areas: ". i . d"; }
-  footer #insta img {
-    grid-area: i; }
-  footer #copyrights {
-    grid-area: d; }
+
+footer #insta img {
+  grid-area: i; }
+
+footer #copyrights {
+  grid-area: d; }
 
 a {
   background-color: black; }
@@ -444,22 +446,57 @@ img {
   display: grid;
   grid-template-columns: 5% auto 5%;
   grid-template-areas: ". g ."; }
-  #section-4 img {
-    width: 100%;
-    margin: 5px; }
   #section-4 #section-4-content {
     grid-area: g; }
+    #section-4 #section-4-content #one {
+      grid-area: g1; }
+    #section-4 #section-4-content #two {
+      grid-area: g2; }
+    #section-4 #section-4-content #three {
+      grid-area: g3; }
+  @media (min-width: 768px) {
+    #section-4 ul {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "g1 g1" "g2 g3"; } }
   @media (min-width: 992px) {
-    #section-4 ul #one img {
-      width: 100%; } }
+    #section-4 ul {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "g1 g1" "g2 g3"; } }
+  @media (min-width: 1200px) {
+    #section-4 ul {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "g1 g2" "g1 g3";
+      /* =============
+          images dont line up on pc
+           ============= */ } }
+  #section-4 li img {
+    margin: 3px; }
 
 /* =============
     Section 5
 ============= */
-#section-5 img {
+#section-5 #circ #i {
+  grid-area: id;
   margin: 2%;
   width: 96%; }
 
 #section-5 p {
   text-align: center;
   margin: 5%; }
+
+@media (min-width: 768px) {
+  #section-5 #circ {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-areas: ". id ."; } }
+
+@media (min-width: 1200px) {
+  #section-5 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "id p"; }
+    #section-5 p {
+      text-align: left; } }

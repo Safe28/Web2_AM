@@ -3,28 +3,62 @@
 ============= */
 #section-4{
 
-  img{
-      width: 100%;   
-      margin: 5px;
-  }
     display: grid;
-    
     grid-template-columns: 5% auto 5%;
     grid-template-areas: ". g .";
 
     #section-4-content{
       grid-area: g;
-     }
-
-
-
-
+      #one{
+        grid-area: g1;
+      }
+      #two{
+        grid-area: g2;
+      }
+      #three{
+        grid-area: g3;
+      }
+    }
+  
+    @include md{
      
-     @include lg{
-       ul{
-     #one{
-     img{
-       width: 100%;
-     }}}}
+      ul{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: 
+      "g1 g1"
+      "g2 g3";
+      }
+      }
 
+      @include lg{
+     
+        ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "g1 g1"
+        "g2 g3";
+        }
+        }
+
+        @include xl{
+     
+          ul{
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-areas: 
+          "g1 g2"
+          "g1 g3";
+          /* =============
+          images dont line up on pc
+           ============= */
+          }
+          }
+      li{
+        img{
+          margin: 3px;
+        }
+      }
 }
+
