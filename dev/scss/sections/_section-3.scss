@@ -2,22 +2,41 @@
     Section 3
 ============= */
 #section-3{
-    img{
-        width: 100%;
-    };
+    
+
     #section-3-container{
         display: grid;
         grid-template-columns: 15px auto 15px;
         grid-template-areas:
         ". t .";
-    
-    
 
         #section-3-content{
             grid-area: t;
             text-align: center;
+            
         }
-        
-    
     }
+
+        #bk{background-image: url('../img/section-3/hero-2.png');
+        background-size: cover;
+        background-position: center;
+        height: 90vh; 
+        margin-bottom: 10px;
+        
+        
+        
+        
+        @include md{
+            height: 100vh;
+            margin-bottom: 15px;
+        }
+        @include lg{
+            height: 110vh;
+            margin-bottom: 20px;
+        }
+        @include xl{
+            height: 120vh;
+            margin-bottom: 25px;
+        }}
 }
+

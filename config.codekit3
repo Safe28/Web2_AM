@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "26667",
 "files": {
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/deploy\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,

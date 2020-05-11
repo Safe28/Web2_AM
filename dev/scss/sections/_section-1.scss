@@ -2,7 +2,18 @@
     Section 1
 ============= */
 #section-1{
+background-image: url('../img/section-1/hero.png');
+background-size: cover;
+background-position: center;
+height: 55vh; 
+
+@include md{
+    height: 65vh;
 }
-img{
-        width: 100%;
-    }
+@include lg{
+    height: 75vh;
+}
+@include xl{
+    height: 85vh;
+}
+}
