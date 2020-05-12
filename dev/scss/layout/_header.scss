@@ -1,3 +1,49 @@
 /* =============
     Header
 ============= */
+header {
+    background-color: $cyan;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    >div {
+        display: grid;
+        grid-template-areas:
+            "logo burger"
+            "navi navi";
+        grid-template-columns: 80% auto;
+        @include lg {
+            grid-template-areas: "logo nav";
+            grid-template-columns: 20% auto;
+        }
+        #logo-container {
+            grid-area: logo;
+            padding: 20px;
+        }
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            justify-content: flex-end;
+            padding: 50px;
+            @include lg {
+                display: none !important;
+            }
+            i {
+                cursor: pointer;
+            }
+        }
+        #nav-container {
+            background-color: $white;
+            display: none;
+            grid-area: navi;
+            padding: 10px;
+            @include lg {
+                background-color: $cyan;
+                display: block !important;
+            }
+        }
+    }
+}

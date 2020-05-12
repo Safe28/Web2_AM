@@ -1,42 +1,48 @@
 /* =============
     Section 3
 ============= */
-#section-3{
-    
-
-    #section-3-container{
+#section-3 {
+    #section-3-container {
         display: grid;
-        grid-template-columns: 15px auto 15px;
+        grid-template-columns: 15% auto 15%;
         grid-template-areas:
-        ". t .";
-
-        #section-3-content{
+            ". t .";
+        #section-3-content {
+            color: $cyan;
             grid-area: t;
             text-align: center;
-            
+            margin: 20px 0 25px;
+            .line {
+                grid-area: line;
+            }
+            .line {
+                background-color: $coal;
+                height: 3px;
+                width: 100%;
+                margin: 15px 0 15px;
+            }
+            h2 {
+                font-size: rem-calc(25);
+            }
         }
     }
-
-        #bk{background-image: url('../img/section-3/hero-2.png');
+    #bk {
+        background-image: url('../img/section-3/hero-2.png');
         background-size: cover;
         background-position: center;
-        height: 90vh; 
+        height: 90vh;
         margin-bottom: 10px;
-        
-        
-        
-        
-        @include md{
+        @include md {
             height: 100vh;
             margin-bottom: 15px;
         }
-        @include lg{
+        @include lg {
             height: 110vh;
             margin-bottom: 20px;
         }
-        @include xl{
+        @include xl {
             height: 120vh;
             margin-bottom: 25px;
-        }}
+        }
+    }
 }
-

@@ -1,77 +1,60 @@
 /* =============
     Section 4
 ============= */
-#section-4{
-
-ul{
-  grid-area: section-4;
-  grid-template-rows: repeat(4, 330px);
-  display: grid;
-  gap: 5px;
-  grid-template-areas: 
-  "g1"
-  "g1"
-  "g2"
-  "g3";
-  
-    @include md{
-    
+#section-4 {
+  ul {
+    grid-area: section-4;
+    grid-template-rows: repeat(4, 330px);
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "g1"
+      "g1"
+      "g2"
+      "g3";
+    @include md {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-areas: 
-      "g1 g1"
-      "g1 g1"
-      "g2 g3";
-      
-      
-      }
-
-      @include lg{
-     
-        
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
+      grid-template-areas:
+        "g1 g1"
         "g1 g1"
         "g1 g1"
         "g2 g3";
-        
-        }
-
-        @include xl{
-     
-          display: grid;
-          grid-template-columns: 60% 40%;
-          grid-template-areas: 
-          "g1 g2"
-          "g1 g2"
-          "g1 g3"
-          "g1 g3";
-          
-          }
-
-          li{
-            background-size: cover;
-            background-position: center;
-            margin: 5px;
-            
-            
-          }
-          
-          #one{
-            grid-area: g1;
-            background-image: url("../img/section-4/gallery-1.png");
-          }
-          #two{
-            grid-area: g2;
-            background-image: url("../img/section-4/gallery-2.png");
-          }
-          #three{
-            grid-area: g3;
-            background-image: url("../img/section-4/gallery-3.png");
-            
-          }
+    }
+    @include lg {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        "g1 g1"
+        "g1 g1"
+        "g1 g1"
+        "g2 g3";
+    }
+    @include xl {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-template-areas:
+        "g1 g2"
+        "g1 g2"
+        "g1 g3"
+        "g1 g3";
+    }
+    li {
+      background-size: cover;
+      background-position: center;
+      margin: 5px;
+    }
+    #one {
+      grid-area: g1;
+      background-image: url("../img/section-4/gallery-1.png");
+    }
+    #two {
+      grid-area: g2;
+      background-image: url("../img/section-4/gallery-2.png");
+    }
+    #three {
+      grid-area: g3;
+      background-image: url("../img/section-4/gallery-3.png");
+    }
+  }
 }
-}
-
-

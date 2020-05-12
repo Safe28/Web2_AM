@@ -1,19 +1,30 @@
 /* =============
     Section 1
 ============= */
-#section-1{
-background-image: url('../img/section-1/hero.png');
-background-size: cover;
-background-position: center;
-height: 55vh; 
-
-@include md{
-    height: 65vh;
-}
-@include lg{
-    height: 75vh;
-}
-@include xl{
-    height: 85vh;
-}
+#section-1 {
+    margin-top: 100px;
+    #title {
+        grid-area: t;
+        margin-top: 100px;
+        color: $yellow;
+        h1 {
+            font-size: rem-calc(50);
+        }
+    }
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: ". t .";
+    background-image: url('../img/section-1/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    @include md {
+        height: 65vh;
+    }
+    @include lg {
+        height: 75vh;
+    }
+    @include xl {
+        height: 85vh;
+    }
 }

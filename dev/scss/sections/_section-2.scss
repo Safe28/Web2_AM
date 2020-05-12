@@ -1,69 +1,76 @@
 /* =============
     Section 2
 ============= */
-
-    #section-2{
-    
-        img{
-            width: 100%;
-        }
-
-        #article-1{
-            grid-area: a
-        }
-        #section-2-content{
-            grid-area: c;
-            align-content: center;
-        }
-        #japan-img{
-            grid-area: i;
-            display: inline-block;
-        }
-
-        #section-2-content{
-            display: grid;
-            grid-template-columns: 10% auto 10%;
-            grid-template-areas:
-            ". a .";}
-    
-       
-        
-            @include md{
-                #section-2-all{
-                    display: grid;
-                 grid-template-columns: 40% 60%;
-                 grid-template-areas:
-                 "i c";
-                }
-                img{
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                }
-            }
-            @include lg{           
-                #section-2-all{
-                    display: grid;
-                 grid-template-columns: 40% 60%;
-                 grid-template-areas:
-                 "i c";
-                }
-                img{
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                }
-            }
-            @include xl{           
-                #section-2-all{
-                    display: grid;
-                 grid-template-columns: 50% 50%;
-                 grid-template-areas:
-                 "i c";
-                }
-                img{
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    padding-left: 15px;
-                }
-            }
-    
+#section-2 {
+    img {
+        width: 100%;
     }
+    #article-1 {
+        grid-area: a
+    }
+    #section-2-content {
+        grid-area: c;
+        align-content: center;
+    }
+    #japan-img {
+        grid-area: i;
+        display: inline-block;
+    }
+    #section-2-content {
+        color: $coal;
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-areas:
+            ". a .";
+        font-weight: 300;
+        h3 {
+            font-size: rem-calc(25);
+        }
+        p {
+            font-size: rem-calc(15);
+        }
+    }
+    .line {
+        background-color: $cyan;
+        height: 3px;
+        width: 100%;
+        margin: 15px 0 15px;
+    }
+    @include md {
+        #section-2-all {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas:
+                "i c";
+        }
+        img {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    @include lg {
+        #section-2-all {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas:
+                "i c";
+        }
+        img {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    @include xl {
+        #section-2-all {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+                "i c";
+        }
+        img {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+        }
+    }
+}

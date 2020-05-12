@@ -1,16 +1,18 @@
 /* =============
     Footer
 ============= */
-footer{
-    display: grid;
-    grid-template-columns: 50% auto 40% 10%;
-    grid-template-areas: ". i . d"; }
-    footer #insta img {
-      grid-area: i; }
-    footer #copyrights {
-      grid-area: d; }
-  a {
-    background-color: black; 
+footer {
+  #insta img {
+    grid-area: i;
   }
-
-
+  #copyrights {
+    grid-area: d;
+  }
+  background-color: $cyan;
+  display: grid;
+  grid-template-columns: 50% auto 35% 10%;
+  grid-template-areas: ". i . d";
+  #copyrights {
+    color: $white;
+  }
+}
