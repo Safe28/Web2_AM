@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "26667",
 "files": {
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/deploy\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -173,10 +167,10 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/dev\/js\/scripts-min.js",
-		"oF": 0,
-		"sC": 3,
+		"oA": 0,
+		"oAP": "\/deploy\/js\/scripts-min.js",
+		"oF": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/dev\/scss\/base\/_base.scss": {
@@ -832,7 +826,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 8193,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -1143,7 +1137,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {

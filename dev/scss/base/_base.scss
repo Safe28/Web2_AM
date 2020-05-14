@@ -10,3 +10,16 @@ li{
     
     list-style-type: none;
 }
+.show-for-medium{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+
+.show-for-large{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}

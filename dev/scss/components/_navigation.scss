@@ -6,13 +6,14 @@
         height: 100%;
         text-align: right;
 
+       
+
         @include lg {
             display: flex;
             justify-content: flex-end;
         }
 
         li {
-            margin-bottom: 20px;
 
             @include lg {
                 align-items: center;
@@ -22,19 +23,14 @@
 
             a:link,
             a:visited {
-                color: blue;
-                text-decoration: underline;
-                transition: 0.25s;
+                color: $white;
+                text-decoration: none;
+                transition: 0.2s;
             }
 
-            a:hover {
-                color: $cyan;
-                @include lg{
-                    color: white;
-                }
-            }
+            a:hover,
             a:active {
-                color: black;
+                color: $black;
             }
         }
     }
